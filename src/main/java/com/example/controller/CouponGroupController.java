@@ -27,6 +27,7 @@ public class CouponGroupController {
      */
     @GetMapping("selectOne")
     public CouponGroup selectOne(Long id) {
+        System.out.println("id = " + id);
         return this.couponGroupService.queryById(id);
     }
 
