@@ -27,7 +27,7 @@ public class CouponGroupController {
      */
     @GetMapping("selectOne")
     public void  A(){
-        System.out.println("解决冲突");
+        System.out.println("解决冲突：我其实才是分支你不要越过界来和我冲突！！！！");
     };
     public CouponGroup selectOne(Long id) {
         System.out.println("id = 测试冲突" + id);
