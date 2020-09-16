@@ -26,9 +26,13 @@ public class CouponGroupController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
+    public void  A(){
+        System.out.println("解决冲突");
+    };
     public CouponGroup selectOne(Long id) {
         System.out.println("id = 测试冲突" + id);
         System.out.println("id = " + id);
+
         return this.couponGroupService.queryById(id);
     }
 
